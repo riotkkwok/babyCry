@@ -1,0 +1,127 @@
+html {font-size: 62.5%}
+html,body,div,ul,li,p,input,button,textarea {padding: 0;margin: 0;border: 0;outline: 0}
+a {outline: 0;text-decoration: none}
+body {font-size: 10px;font-family: "Helvetica Neue",Helvetica,STHeiTi,sans-serif;margin-top: 0;}
+img,video {vertical-align: bottom}
+ul {list-style-type: none}
+.cf,.clearfix{zoom:1; overflow: hidden}
+.cf:after,.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden}
+.hidden{
+    display: none !important;
+}
+.invisible{
+    opacity: 0 !important;
+}
+
+body{
+    color: #000000;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+h1{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    min-width: 320px;
+    border-bottom: 1px solid #aaaaaa;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.warning{
+    position: absolute;
+    display: block;
+    color: #ff0000;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #000000;
+    z-index: 1;
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 10;
+}
+.dialog{
+    position: absolute;
+    top: 250px;
+    left: 10%;
+    width: 80%;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #000000;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #ffffff;
+    z-index: 15;
+}
+.toast{
+    color: #ff0000;
+    font-size: 20px;
+}
+
+.flow-btn{
+    position: fixed;
+    top: 50px;
+    right: 1%;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #ffffff;
+    z-index: 5;
+}
+.flow-txt{
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding: 5px 0;
+}
+.flow-txt{
+    font-size: 14px;
+}
+.flow-btn a, .flow-btn a:link, .flow-btn a:visited, .flow-btn a:hover, .flow-btn a:active{
+    color: #333333;
+}
+.flow-btn a:hover, .flow-btn a:active{
+    background-color: #87cefa;
+}
+.menu{
+    padding: 2px 0;
+}
+.menu-list{
+    padding-left: 2px;
+}
+.menu-item a{
+    display: block;
+    font-size: 13px;
+    text-indent: 5px;
+    line-height: 20px;
+}
+.fadeInOut{
+    animation: toastAnim 4s 1 forwards linear;
+    -moz-animation: toastAnim 4s 1 forwards linear;
+    -webkit-animation: toastAnim 4s 1 forwards linear;
+}
+@keyframes toastAnim{
+    0%{opacity: 0;}
+    25%{opacity: 1;}
+    75%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@-moz-keyframes toastAnim{
+    0%{opacity: 0;}
+    25%{opacity: 1;}
+    75%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes toastAnim{
+    0%{opacity: 0;}
+    25%{opacity: 1;}
+    75%{opacity: 1;}
+    100%{opacity: 0;}
+}
